@@ -1,0 +1,8 @@
+LOAD R1, 0(R0)    # 2 cycles (1 addr + 1 mem)
+ADD R2, R1, R1    # 2 cycles
+MUL R3, R2, R2    # 10 cycles
+ADD R4, R3, R3    # 2 cycles
+STORE R4, 1(R0)   # 2 cycles (1 addr + 1 mem)
+ADD R5, R4, R4    # 2 cycles
+MUL R6, R5, R5    # 10 cycles
+STORE R6, 2(R0)   # 2 cycles 

@@ -1,0 +1,6 @@
+LOAD R1, 0(R0)    # Load value from memory[0]
+STORE R1, 1(R0)   # Store to memory[1]
+LOAD R2, 1(R0)    # Load from memory[1]
+STORE R2, 2(R0)   # Store to memory[2]
+LOAD R3, 2(R0)    # Load from memory[2]
+STORE R3, 3(R0)   # Store to memory[3] 

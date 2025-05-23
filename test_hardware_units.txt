@@ -1,0 +1,9 @@
+LOAD R1, 0(R0)    # Uses Load Buffer 1
+LOAD R2, 1(R0)    # Uses Load Buffer 2
+ADD R3, R1, R2    # Uses Add Unit 1
+ADD R4, R1, R2    # Uses Add Unit 2
+ADD R5, R1, R2    # Uses Add Unit 3
+MUL R6, R3, R4    # Uses Mul Unit 1
+MUL R7, R4, R5    # Uses Mul Unit 2
+STORE R6, 2(R0)   # Uses Store Buffer 1
+STORE R7, 3(R0)   # Uses Store Buffer 2 

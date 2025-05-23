@@ -1,0 +1,8 @@
+LOAD R1, 0(R0)    # Load value into R1
+LOAD R2, 1(R0)    # Load value into R2
+BEQ R1, R2, 2     # Branch if R1 == R2 (likely to be mispredicted)
+ADD R3, R1, R2    # This will be executed even if branch is taken
+ADD R4, R3, R1    # This will be executed even if branch is taken
+BEQ R1, R1, 1     # Branch if R1 == R1 (always taken, should be predicted correctly)
+ADD R5, R4, R3    # This should be flushed if branch is taken
+STORE R5, 2(R0)   # Store result 

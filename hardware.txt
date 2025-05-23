@@ -1,0 +1,6 @@
+2 2 1    # Load Buffer: 2 units, 2 cycles, 1 addr cycle
+2 2 1    # Store Buffer: 2 units, 2 cycles, 1 addr cycle
+1 1      # BEQ: 1 unit, 1 cycle
+1 1      # Call/Ret: 1 unit, 1 cycle
+1 2      # Add/Sub: 3 units, 2 cycles
+2 10     # Mul/Div: 2 units, 10 cycles

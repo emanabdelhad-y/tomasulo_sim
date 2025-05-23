@@ -1,0 +1,8 @@
+LOAD R1, 0(R0)    # Load value into R1
+STORE R1, 1(R0)   # Store R1 to memory
+LOAD R2, 1(R0)    # Load the value we just stored
+ADD R3, R2, R1    # Add the two loaded values
+STORE R3, 2(R0)   # Store result
+LOAD R4, 2(R0)    # Load the result
+MUL R5, R4, R4    # Square the result
+STORE R5, 3(R0)   # Store final result 

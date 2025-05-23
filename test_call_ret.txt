@@ -1,0 +1,7 @@
+LOAD R1, 1(R0)    # R1 = 7 (from memory[1])
+LOAD R2, 2(R0)    # R2 = 3 (from memory[2])
+CALL 3            # Call function at offset 3, store PC+1 in R1
+STORE R3, 3(R0)   # Store result in memory[3]
+RET               # End program
+ADD R3, R1, R2    # Function: R3 = R1 + R2 (7 + 3 = 10)
+RET               # Return to caller

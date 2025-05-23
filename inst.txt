@@ -1,0 +1,3 @@
+LOAD R2, 0(R0)
+ADD R3, R2, R2
+STORE R3, 1(R0)

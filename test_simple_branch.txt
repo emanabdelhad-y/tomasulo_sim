@@ -1,0 +1,6 @@
+ADD R1, R0, R0    # R1 = 0
+ADD R2, R0, R0    # R2 = 0
+BEQ R1, R2, 1     # Branch if R1 == R2 (will be taken)
+ADD R3, R1, R2    # This will be skipped
+ADD R4, R1, R2    # This will execute
+STORE R4, 0(R0)   # Store result 
